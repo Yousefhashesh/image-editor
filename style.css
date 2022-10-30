@@ -1,0 +1,105 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+   
+}
+.container
+{
+    width: 80%;
+    background-color: white;
+    border-radius: 8px ;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+padding: 20px    ;
+}
+.img
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+  gap: 30px;
+}
+.img-box
+{
+    background-color: #222;
+ display: flex;
+ width: 500px;
+ height: 60vh;
+ justify-content: center;
+ align-self: center;
+}
+.img-box img,canvas
+{
+    width: 90vw;
+    max-width:100%;
+    height: 60vh;
+max-height: 100%;
+}
+.img input
+{
+    display: none;
+}
+.upload
+{
+    align-self: center;
+    text-align: center;
+   width: 130px;
+   height: 35px;
+    color: white;
+    background-color: #222;
+    border-radius: 6px;
+   
+}
+.upload label
+{
+    cursor: pointer;
+    font-size: 30px;
+}
+.upload:hover
+{
+    background-color: #333;
+    box-shadow: -1px 3px 9px 6px black;
+}
+.filters ul,.filters ul li
+{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.filters ul li:last-child
+{
+    display: flex;
+    flex-direction: row;
+}
+.filters ul li:last-child a ,:last-child span{
+    color: white;
+    background-color: #222;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+}
+.filters ul li:last-child a:hover ,:last-child span:hover
+{
+    background-color: #333;
+    box-shadow: -1px 3px 9px 6px black;
+}
+@media  screen and (max-width:651px ) {
+    .container
+    {
+       min-width: 651px;
+       min-height: 100vh;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
